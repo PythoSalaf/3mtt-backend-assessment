@@ -6,7 +6,7 @@ const userRoute = require("./routes/user");
 const blogRoute = require("./routes/blog");
 mongoose.set("strictQuery", true);
 mongoose
-  .connect(process.env.MONGO_URS)
+  .connect(process.env.MONGO_URI)
   .then(() => console.log("connected to db"))
   .catch((err) => console.log(err));
 
